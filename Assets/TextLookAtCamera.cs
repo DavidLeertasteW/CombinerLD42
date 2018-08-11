@@ -8,9 +8,9 @@ public class TextLookAtCamera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        transform.LookAt(Camera.main.gameObject.transform.position);
+        transform.rotation = Camera.main.gameObject.transform.rotation;
 
-        transform.Rotate(transform.up, 180);
+        //transform.Rotate(transform.up, 180);
 	}
 	
 	// Update is called once per frame
