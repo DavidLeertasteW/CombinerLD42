@@ -106,51 +106,69 @@ public class PawnControler : MonoBehaviour
             if (targetPawn == null){
                 return;
             }
-            //neutral pawns have a player number below zero, and are also adding to your count
-            if ((playerNumber == targetPawn.playerNumber) || (targetPawn.playerNumber < 0))
+            //if this pawn moves into a space with a pawn of the same player, it absorbs it and gains its strength
+            //neutral pawns have a player number below zero, and are also adding to this pawnn's count
+            //but only if they have the exact same strength
+            if (((playerNumber == targetPawn.playerNumber) || (targetPawn.playerNumber < 0))&&(strentgh == targetPawn.strentgh))
             {
-                //but only if they have the same strength
-                if (strentgh == targetPawn.strentgh)
+                  strentgh += targetPawn.strentgh;
+                  textM.text = strentgh.ToString();
+                  transform.position = targetObject.transform.position;
+                  if (master != null)
+                    {
+                        master.transform.position = transform.position;
+                    }
+                Destroy(targetObject);
+            }
+            //if the pawn is stronger, it just destroys the other cube
+            else if (strentgh > targetPawn.strentgh)
+            {
+                //strentgh += targetPawn.strentgh;
+                transform.position = targetObject.transform.position;
+                if (master != null)
                 {
-                    strentgh += targetPawn.strentgh;
-                    textM.text = strentgh.ToString();
+                    master.transform.position = transform.position;
+                }
+                Destroy(targetObject);
+            }
+            //if the pawn is weaker, it gets destroyed
+            else if (strentgh < targetPawn.strentgh)
+            {
+                //strentgh += targetPawn.strentgh;
+                transform.position = targetObject.transform.position;
+                if (master != null)
+                {
+                    master.transform.position = transform.position;
+                }
+                Destroy(gameObject);
+            }
+            //if the cube we move into is the same strength but not of the same or a neutral faction
+            //, we normally want to destroy both
+            else if (strentgh == targetPawn.strentgh)
+            {
+                //eccept, if this cube is a neutral cube, because then it is (as determined earlier into an other player)
+                //and it should be absorbed by it
+                if (playerNumber < 0)
+                {
+                    targetPawn.strentgh += strentgh;
+                    targetPawn.textM.text = targetPawn.strentgh.ToString();
+                    transform.position = targetObject.transform.position;
+                    Destroy(gameObject);
+                }
+                //but if that is not the case, we still want to destroy both
+                else
+                {
+                    
                     transform.position = targetObject.transform.position;
                     if (master != null)
                     {
                         master.transform.position = transform.position;
                     }
+                    Destroy(gameObject);
                     Destroy(targetObject);
                 }
             }
-            if (strentgh > targetPawn.strentgh)
-            {
-                //strentgh += targetPawn.strentgh;
-                transform.position = targetObject.transform.position;
-                if (master != null)
-                {
-                    master.transform.position = transform.position;
-                }
-                Destroy(targetObject);
-            }else if (strentgh < targetPawn.strentgh)
-            {
-                //strentgh += targetPawn.strentgh;
-                transform.position = targetObject.transform.position;
-                if (master != null)
-                {
-                    master.transform.position = transform.position;
-                }
-                Destroy(gameObject);
-            }else if (strentgh == targetPawn.strentgh)
-            {
-                //strentgh += targetPawn.strentgh;
-                transform.position = targetObject.transform.position;
-                if (master != null)
-                {
-                    master.transform.position = transform.position;
-                }
-                Destroy(gameObject);
-                Destroy(targetObject);
-            }
+            //in this case there is nothing in our way and we can move our cube there
         }else{
             transform.position += direction;
             if (master != null)
