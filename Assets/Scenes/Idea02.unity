@@ -2632,7 +2632,7 @@ TextMesh:
   m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 0
-  m_Alignment: 0
+  m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 500
   m_FontStyle: 0
@@ -11964,6 +11964,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 33
       objectReference: {fileID: 0}
+    - target: {fileID: 33934611426663962, guid: d81aef93d21ed4feab27eae22a039bea,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 7dc8b4aef8354447da86e55189072d88, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d81aef93d21ed4feab27eae22a039bea, type: 2}
   m_IsPrefabAsset: 0
