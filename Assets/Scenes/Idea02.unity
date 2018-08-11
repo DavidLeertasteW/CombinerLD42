@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &16555308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -254,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &32943978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -352,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &34608419
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -552,6 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &47037898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -752,6 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &55554588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &107612797
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1050,6 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &119375768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1641,6 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &192301282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1739,6 +1747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &194803999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2143,6 +2152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &279316103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2241,6 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &282113142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2339,6 +2350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &282576375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2437,6 +2449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &294412077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2535,6 +2548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &304807231
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2805,6 +2819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &336479829
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3075,6 +3090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &391440094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3287,6 +3303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &406742837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3385,6 +3402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &411469888
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3569,6 +3587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &427819180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3667,6 +3686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &430814904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3765,6 +3785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &452573007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3863,6 +3884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &465362336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4129,6 +4151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &544493170
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4227,6 +4250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &547852446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4325,6 +4349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &551635142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4509,6 +4534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &581084633
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4607,6 +4633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &593196521
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4705,6 +4732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &594551632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4803,6 +4831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &622903789
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4901,6 +4930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &623799442
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4999,6 +5029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &626374259
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5183,6 +5214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &638852397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5281,6 +5313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &656371462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5379,6 +5412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &661137676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5519,6 +5553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &684641203
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5617,6 +5652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &725979295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5715,6 +5751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &753656681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5813,6 +5850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &756328938
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6288,6 +6326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &838163707
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6472,6 +6511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &926002683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6656,6 +6696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &994306783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6754,6 +6795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1002390383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6852,6 +6894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1040426500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7256,6 +7299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1139287453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7628,6 +7672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1162434622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7812,6 +7857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1186281955
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7910,6 +7956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1191698081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8110,6 +8157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1202119621
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8482,6 +8530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1297357096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8580,6 +8629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1300710470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8785,6 +8835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1315533395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8883,6 +8934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1325446089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9083,6 +9135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1353649524
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9283,6 +9336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1371767778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9381,6 +9435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1392279864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9479,6 +9534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1396687352
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9765,6 +9821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1452196762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10051,6 +10108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1486550253
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10149,6 +10207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1492979880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10247,6 +10306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1497990982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10517,6 +10577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1578602899
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10615,6 +10676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1676430103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10713,6 +10775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1686389332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10811,6 +10874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1687636948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11081,6 +11145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1702010083
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11179,6 +11244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1706574206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11465,6 +11531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1723855607
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11772,6 +11839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1768292020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11870,6 +11938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &1776618450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12015,6 +12084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1790924154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12199,6 +12269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1809382169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12511,6 +12582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1887985059
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12711,6 +12783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1906699885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13013,6 +13086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1917743753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13197,6 +13271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1925264964
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13397,6 +13472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 60
+  spawnsAfter: 0
 --- !u!23 &1937008617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13499,8 +13575,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 5.0000005
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13523,7 +13599,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1987484988}
   m_LocalRotation: {x: 0.321048, y: -0.26227736, z: 0.093012765, w: 0.90525544}
-  m_LocalPosition: {x: 8.285494, y: 7.0108376, z: -1.9528627}
+  m_LocalPosition: {x: 8.14, y: 7.34, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13572,6 +13648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &1998824670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13670,6 +13747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 30
+  spawnsAfter: 0
 --- !u!23 &2029007767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13912,6 +13990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 15
+  spawnsAfter: 0
 --- !u!23 &2145437753
 MeshRenderer:
   m_ObjectHideFlags: 0
