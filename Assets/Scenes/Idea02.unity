@@ -5507,6 +5507,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114049008123692576, guid: c3c02317f5b2b4a02b1d1d05ab820c41,
+        type: 2}
+      propertyPath: alt
+      value: 308
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c02317f5b2b4a02b1d1d05ab820c41, type: 2}
   m_IsPrefabAsset: 0
@@ -12038,6 +12043,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 7dc8b4aef8354447da86e55189072d88, type: 3}
+    - target: {fileID: 114149969441383252, guid: d81aef93d21ed4feab27eae22a039bea,
+        type: 2}
+      propertyPath: alt
+      value: 307
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d81aef93d21ed4feab27eae22a039bea, type: 2}
   m_IsPrefabAsset: 0

@@ -60,34 +60,70 @@ public class PawnControler : MonoBehaviour
             return;
         }
         //if not, it is reacting to player input
-        if ((master.transform.position == transform.position) && (Input.GetKey(curserControls.shift)))
+        if (master.transform.position == transform.position)  
         {
-            if (Input.GetKeyDown(curserControls.forward))
+            if (Input.GetKey(curserControls.shift))
             {
-                Raycast(Vector3.forward);
+                if (Input.GetKeyDown(curserControls.forward))
+                {
+                    Raycast(Vector3.forward);
+
+                }
+                if (Input.GetKeyDown(curserControls.backward))
+                {
+                    Raycast(Vector3.back);
+
+                }
+                if (Input.GetKeyDown(curserControls.left))
+                {
+                    Raycast(Vector3.left);
+
+                }
+                if (Input.GetKeyDown(curserControls.right))
+                {
+                    Raycast(Vector3.right);
+
+                }
+            }
+            else if ((Input.GetKey(curserControls.alt)))
+            {
+                if (strentgh > 1)
+                {
+
+
+                    if (Input.GetKeyDown(curserControls.forward))
+                    {
+                        Duplicate();
+                        Raycast(Vector3.forward);
+
+                    }
+                    if (Input.GetKeyDown(curserControls.backward))
+                    {
+                        Duplicate();
+                        Raycast(Vector3.back);
+
+                    }
+                    if (Input.GetKeyDown(curserControls.left))
+                    {
+                        Duplicate();
+                        Raycast(Vector3.left);
+
+                    }
+                    if (Input.GetKeyDown(curserControls.right))
+                    {
+                        Duplicate();
+                        Raycast(Vector3.right);
+
+                    }
+                }
+
 
             }
-            if (Input.GetKeyDown(curserControls.backward))
-            {
-                Raycast(Vector3.back);
 
-            }
-            if (Input.GetKeyDown(curserControls.left))
-            {
-                Raycast(Vector3.left);
 
-            }
-            if (Input.GetKeyDown(curserControls.right))
-            {
-                Raycast(Vector3.right);
-
-            }
 
 
         }
-
-
-
     }
 	void FixedUpdate()
 	{
@@ -220,6 +256,13 @@ public class PawnControler : MonoBehaviour
         }
 
     }
+        void Duplicate () 
+        {
+            //Vector3 tempPos = master.transform.position;
+            strentgh = strentgh / 2;
+            textM.text = strentgh.ToString();
+            GameObject.Instantiate(gameObject);
+        }
 
 
 }

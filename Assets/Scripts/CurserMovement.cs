@@ -6,7 +6,7 @@ public class CurserMovement : MonoBehaviour
 {
 
 
-    public KeyCode forward, backward, left, right, shift;
+    public KeyCode forward, backward, left, right, shift, alt;
 
     public int pawns;
 
@@ -24,7 +24,7 @@ public class CurserMovement : MonoBehaviour
     void Update()
     {
 
-        if (!Input.GetKey(shift))
+        if (!Input.GetKey(shift)&&!Input.GetKey(alt))
         {
             if (Input.GetKeyDown(forward))
             {
