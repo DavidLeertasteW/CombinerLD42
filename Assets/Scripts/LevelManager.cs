@@ -16,6 +16,8 @@ public class LevelManager : MonoBehaviour {
     Text winText;
     [SerializeField]
     string unentschiedenText = "Both loose!", singlePlayerGameOverText = "Game Over";
+    [SerializeField]
+    string nextScene;
 
 
 
@@ -24,7 +26,13 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         menu.onClick.AddListener(MenuOnClick);
-        next.onClick.AddListener(NextOnClick);
+        if (nextScene != ""&& nextScene != "null")
+        {
+            next.onClick.AddListener(NextOnClick);
+        }else 
+        {
+            next.gameObject.SetActive(false);
+        }
         rematch.onClick.AddListener(RematchOnClick);
         GameObject[] masterObjects = GameObject.FindGameObjectsWithTag("master");
         foreach (GameObject g in masterObjects)
@@ -76,19 +84,21 @@ public class LevelManager : MonoBehaviour {
 		
 	}
 
-    void MenuOnClick () {
+    void MenuOnClick () 
+    {
         Debug.Log("Menu");
-        
+        SceneManager.LoadScene(sceneName: "MainMenu");
     }
     void NextOnClick()
     {
         Debug.Log("Next");
+        SceneManager.LoadScene(sceneName: nextScene);
+
     }
     void RematchOnClick()
     {
         Debug.Log("Rematch");
         int currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.UnloadSceneAsync(currentSceneNumber);
         SceneManager.LoadScene(sceneBuildIndex: currentSceneNumber);
     }
 }
