@@ -32,7 +32,7 @@ public class MenuManager : MonoBehaviour {
         else
         {
             Application.OpenURL("https://google.com/");
-            //Application.Quit();
+            Application.Quit();
         }
 
 
