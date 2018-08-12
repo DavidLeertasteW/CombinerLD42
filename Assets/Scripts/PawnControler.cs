@@ -213,6 +213,7 @@ public class PawnControler : MonoBehaviour
             if (master != null)
             {
                 master.transform.position = transform.position;
+                StartScreenShake(this.strentgh / 2);
             }
 
         }
@@ -252,6 +253,7 @@ public class PawnControler : MonoBehaviour
         }
         if (amount < 0)
         {
+            StartScreenShake(target.strentgh);
             Destroy(target.gameObject);
         }
 
@@ -263,6 +265,18 @@ public class PawnControler : MonoBehaviour
             textM.text = strentgh.ToString();
             GameObject.Instantiate(gameObject);
         }
+
+    void StartScreenShake (int strength) {
+        Debug.Log("Shake!!!");
+        ScreenShake screenShake = Camera.main.gameObject.GetComponent<ScreenShake>();
+        strength = (int)Mathf.Floor(Mathf.Sqrt(strength));
+        if (strength > screenShake.strength){
+            screenShake.strength = strength;
+        }
+
+
+        screenShake.StartCoroutine("ShakeThat");
+    }
 
 
 }

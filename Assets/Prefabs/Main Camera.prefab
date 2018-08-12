@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 81534828080395738}
   - component: {fileID: 114767280051416030}
   - component: {fileID: 114282784413045016}
+  - component: {fileID: 114345394059902850}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -275,7 +276,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.63
+  orthographic size: 4.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -521,6 +522,19 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &114345394059902850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756975231413662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab41cf4b5df34660903dc716b2a1124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strengthMultiplier: 0.01
+  strength: 0
 --- !u!114 &114390850524117030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -783,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033248d9491794429abc86aa1fa0f944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singlePlayer: 1
+  singlePlayer: 0
   mainUIObject: {fileID: 1130209824540756}
   menu: {fileID: 114074151981114138}
   next: {fileID: 114404302382231596}
