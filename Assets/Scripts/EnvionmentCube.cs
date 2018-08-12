@@ -15,11 +15,26 @@ public class EnvionmentCube : MonoBehaviour {
     BoxCollider collider;
     MeshRenderer meshRenderer;
 
+    ParticleSystem particle;
+
+
 	// Use this for initialization
 	void Start () {
         
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
         collider = gameObject.GetComponent<BoxCollider>();
+
+       /* particle = transform.GetChild(0).gameObject.GetComponent<ParticleSystem>();
+
+        if (particle != null)
+        {
+            particle.Stop();
+            var duration = particle.main;
+            duration.duration = lifetime;
+            particle.Play();
+
+        }
+*/
 
         if (spawnsAfter > 0)
         {
@@ -34,7 +49,15 @@ public class EnvionmentCube : MonoBehaviour {
 	void Update () {
         
         timeSinceStart += Time.deltaTime;
-        mat.color = Color.Lerp(Color.white, Color.black, timeSinceStart / (lifetime+spawnsAfter));
+        float perc = timeSinceStart / (lifetime + spawnsAfter);
+        Color col = Color.Lerp(Color.white, Color.black, perc);
+        mat.color = col;
+       
+       
+
+        //rateOverTime = perc*20;
+
+
         if (timeSinceStart >= spawnsAfter)
         {
             meshRenderer.enabled = true;
