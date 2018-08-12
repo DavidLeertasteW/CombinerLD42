@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
 
+    [SerializeField]
+    bool singlePlayer = false;
     [SerializeField]
     GameObject mainUIObject;
     [SerializeField]
@@ -12,7 +15,9 @@ public class SceneManager : MonoBehaviour {
     [SerializeField]
     Text winText;
     [SerializeField]
-    string unentschiedenText = "Both loose!";
+    string unentschiedenText = "Both loose!", singlePlayerGameOverText = "Game Over";
+
+
 
     private List<CurserMovement> masters = new List<CurserMovement>();
 
@@ -49,15 +54,23 @@ public class SceneManager : MonoBehaviour {
 
         } 
         if (masters.Count <= 0){
-
-            mainUIObject.SetActive(true);
-            winText.text = unentschiedenText;
+            if (singlePlayer)
+            {
+                mainUIObject.SetActive(true);
+                winText.text = singlePlayerGameOverText; 
+            }else 
+            {
+                mainUIObject.SetActive(true);
+                winText.text = unentschiedenText;
+            }
 
         }else if (masters.Count == 1)
         {
-
-            mainUIObject.SetActive(true);
-            winText.text = masters[0].winText;
+            if (!singlePlayer)
+            {
+                mainUIObject.SetActive(true);
+                winText.text = masters[0].winText;
+            }
 
         }
 		
@@ -74,5 +87,8 @@ public class SceneManager : MonoBehaviour {
     void RematchOnClick()
     {
         Debug.Log("Rematch");
+        int currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.UnloadSceneAsync(currentSceneNumber);
+        SceneManager.LoadScene(sceneBuildIndex: currentSceneNumber);
     }
 }

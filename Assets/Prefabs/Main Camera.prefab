@@ -211,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756975231413662}
   m_LocalRotation: {x: 0.35518324, y: 0.00897412, z: -0.003398288, w: 0.9347475}
-  m_LocalPosition: {x: -1.2412843, y: 16.07, z: -10.36}
+  m_LocalPosition: {x: 3.12, y: 14.73, z: -11.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224884158637263694}
@@ -709,12 +709,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033248d9491794429abc86aa1fa0f944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  singlePlayer: 0
   mainUIObject: {fileID: 1130209824540756}
   menu: {fileID: 114074151981114138}
   next: {fileID: 114404302382231596}
   rematch: {fileID: 114912324714714750}
   winText: {fileID: 114457622232915482}
   unentschiedenText: Both loose!
+  singlePlayerGameOverText: Game Over
 --- !u!114 &114912324714714750
 MonoBehaviour:
   m_ObjectHideFlags: 1
