@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Idea02.unity
     guid: 2d4b0fd82bfd74fd59bc9ad563a5be31
   - enabled: 1
-    path: Assets/Scenes/Maps/Tutorial.unity
-    guid: 9dd93acfc9e29438d8d30f0adf6c035c
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: ff7faa6f873584c10b80dc324b4d0078
+  - enabled: 1
+    path: Assets/Scenes/Maps/Tutorial.unity
+    guid: 9dd93acfc9e29438d8d30f0adf6c035c
   - enabled: 1
     path: Assets/Scenes/Maps/Map1.unity
     guid: aa1ee6f80aedc43cbbbc9ef264734d81

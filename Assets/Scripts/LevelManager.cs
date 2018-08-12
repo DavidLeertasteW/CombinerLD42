@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
         menu.onClick.AddListener(MenuOnClick);
         if (nextScene != ""&& nextScene != "null")
         {
@@ -45,13 +46,7 @@ public class LevelManager : MonoBehaviour {
 
     // Update is called once per frame
 	void LateUpdate () {
-        if(triggerSinglePlayerSuccess)
-        {
-            Time.timeScale = 0.0f;
-            mainUIObject.SetActive(true);
-            winText.text = singlePlayerSuccessText;
-            return;
-        }
+        
         
 
         if(masters.Count>0){
@@ -90,6 +85,12 @@ public class LevelManager : MonoBehaviour {
                 Time.timeScale = 0.0f;
                 mainUIObject.SetActive(true);
                 winText.text = masters[0].winText;
+            }else if (triggerSinglePlayerSuccess)
+            {
+                Time.timeScale = 0.0f;
+                mainUIObject.SetActive(true);
+                winText.text = singlePlayerSuccessText;
+
             }
 
         }
