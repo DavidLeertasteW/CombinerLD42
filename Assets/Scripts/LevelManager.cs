@@ -15,9 +15,11 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     Text winText;
     [SerializeField]
-    string unentschiedenText = "Both loose!", singlePlayerGameOverText = "Game Over";
+    string unentschiedenText = "Both loose!", singlePlayerGameOverText = "Game Over", singlePlayerSuccessText = "Success";
     [SerializeField]
     string nextScene;
+
+    public bool triggerSinglePlayerSuccess = false;
 
 
 
@@ -43,6 +45,13 @@ public class LevelManager : MonoBehaviour {
 
     // Update is called once per frame
 	void LateUpdate () {
+        if(triggerSinglePlayerSuccess)
+        {
+            Time.timeScale = 0.0f;
+            mainUIObject.SetActive(true);
+            winText.text = singlePlayerSuccessText;
+            return;
+        }
         
 
         if(masters.Count>0){
@@ -64,10 +73,12 @@ public class LevelManager : MonoBehaviour {
         if (masters.Count <= 0){
             if (singlePlayer)
             {
+                Time.timeScale = 0.0f;
                 mainUIObject.SetActive(true);
                 winText.text = singlePlayerGameOverText; 
             }else 
             {
+                Time.timeScale = 0.0f;
                 mainUIObject.SetActive(true);
                 winText.text = unentschiedenText;
             }
@@ -76,6 +87,7 @@ public class LevelManager : MonoBehaviour {
         {
             if (!singlePlayer)
             {
+                Time.timeScale = 0.0f;
                 mainUIObject.SetActive(true);
                 winText.text = masters[0].winText;
             }

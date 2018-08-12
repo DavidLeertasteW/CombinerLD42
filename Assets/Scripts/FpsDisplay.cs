@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class FpsDisplay : MonoBehaviour {
 
     Text uiText;
-    int counter = 0, steps = 10;
+    int counter = 0, steps = 5;
     float currentMeassure = 0;
 
 	// Use this for initialization

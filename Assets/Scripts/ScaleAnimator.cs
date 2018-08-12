@@ -26,7 +26,7 @@ public class ScaleAnimator : MonoBehaviour {
 	void Update () {
         if(rectTransform != null)
         {
-            currenttime += Time.deltaTime;
+            currenttime += Time.unscaledDeltaTime;
             float perc = Mathf.Clamp01(currenttime / duration);
             rectTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, animationCurve.Evaluate(perc));
         }
