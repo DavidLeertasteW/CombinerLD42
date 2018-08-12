@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 20468785398995720}
   - component: {fileID: 81534828080395738}
   - component: {fileID: 114767280051416030}
+  - component: {fileID: 114282784413045016}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -228,7 +229,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756975231413662}
-  m_LocalRotation: {x: 0.35518324, y: 0.00897412, z: -0.003398288, w: 0.9347475}
+  m_LocalRotation: {x: 0.35519665, y: 0, z: 0, w: 0.9347916}
   m_LocalPosition: {x: 3.12, y: 14.73, z: -11.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -236,7 +237,7 @@ Transform:
   - {fileID: 4944183876755506}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 41.611004, y: 1.1010001, z: 0.002}
+  m_LocalEulerAnglesHint: {x: 41.611004, y: 0, z: 0}
 --- !u!4 &4944183876755506
 Transform:
   m_ObjectHideFlags: 1
@@ -259,7 +260,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9882353, g: 0.3882353, b: 0.03137255, a: 1}
+  m_BackGroundColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -274,7 +275,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.74
+  orthographic size: 4.63
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -491,6 +492,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114282784413045016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756975231413662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114292272530885532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -779,7 +791,9 @@ MonoBehaviour:
   winText: {fileID: 114457622232915482}
   unentschiedenText: Both loose!
   singlePlayerGameOverText: Game Over
+  singlePlayerSuccessText: Success
   nextScene: 
+  triggerSinglePlayerSuccess: 0
 --- !u!114 &114912324714714750
 MonoBehaviour:
   m_ObjectHideFlags: 1
