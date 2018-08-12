@@ -8,6 +8,10 @@ public class CurserMovement : MonoBehaviour
 
     public KeyCode forward, backward, left, right, shift;
 
+    public int pawns;
+
+
+    public string winText = "Player X wins!";
    
 
     // Use this for initialization

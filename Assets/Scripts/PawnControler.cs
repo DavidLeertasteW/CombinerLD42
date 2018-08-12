@@ -22,6 +22,8 @@ public class PawnControler : MonoBehaviour
     public int strentgh;
     public int playerNumber;
 
+
+
     TextMesh textM;
 
     [SerializeField]
@@ -37,6 +39,7 @@ public class PawnControler : MonoBehaviour
         if (master != null)
         {
             curserControls = master.GetComponent<CurserMovement>();
+            DestroyPawn(this, 1);
         }
         //need to output the pawn's strength
         textM = transform.GetChild(0).gameObject.GetComponent<TextMesh>();
@@ -90,7 +93,7 @@ public class PawnControler : MonoBehaviour
 	{
         if(!Physics.Raycast(transform.position,Vector3.down,1))
         {
-            Destroy(gameObject);
+            DestroyPawn(this, -1);
         }
 	}
 
@@ -118,7 +121,7 @@ public class PawnControler : MonoBehaviour
                     {
                         master.transform.position = transform.position;
                     }
-                Destroy(targetObject);
+                DestroyPawn(targetPawn, -1);
             }
             //if the pawn is stronger, it just destroys the other cube
             else if (strentgh > targetPawn.strentgh)
@@ -129,7 +132,7 @@ public class PawnControler : MonoBehaviour
                 {
                     master.transform.position = transform.position;
                 }
-                Destroy(targetObject);
+                DestroyPawn(targetPawn, -1);
             }
             //if the pawn is weaker, it gets destroyed
             else if (strentgh < targetPawn.strentgh)
@@ -140,7 +143,7 @@ public class PawnControler : MonoBehaviour
                 {
                     master.transform.position = transform.position;
                 }
-                Destroy(gameObject);
+                DestroyPawn(this, -1);
             }
             //if the cube we move into is the same strength but not of the same or a neutral faction
             //, we normally want to destroy both
@@ -153,7 +156,7 @@ public class PawnControler : MonoBehaviour
                     targetPawn.strentgh += strentgh;
                     targetPawn.textM.text = targetPawn.strentgh.ToString();
                     transform.position = targetObject.transform.position;
-                    Destroy(gameObject);
+                    DestroyPawn(this,-1);
                 }
                 //but if that is not the case, we still want to destroy both
                 else
@@ -164,8 +167,8 @@ public class PawnControler : MonoBehaviour
                     {
                         master.transform.position = transform.position;
                     }
-                    Destroy(gameObject);
-                    Destroy(targetObject);
+                    DestroyPawn(this, -1);
+                    DestroyPawn(targetPawn, -1);
                 }
             }
             //in this case there is nothing in our way and we can move our cube there
@@ -201,6 +204,20 @@ public class PawnControler : MonoBehaviour
         }
 
 
+
+    }
+    void DestroyPawn (PawnControler target, int amount){
+        GameObject m = target.master;
+        if (m != null){
+            
+            m.GetComponent<CurserMovement>().pawns += amount;
+
+
+        }
+        if (amount < 0)
+        {
+            Destroy(target.gameObject);
+        }
 
     }
 
