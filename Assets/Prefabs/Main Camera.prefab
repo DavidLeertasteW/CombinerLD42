@@ -821,6 +821,30 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b325b7c9f0f6c4a1188b64429dce6c79, type: 3}
   - {fileID: 8300000, guid: 3425873ae529c421eb0b5921ffb7cc9d, type: 3}
   - {fileID: 8300000, guid: 7a8a96b657df146c3a580a7430972f77, type: 3}
+  volume:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0074404734
+      value: 0.22942433
+      inSlope: -0.36747986
+      outSlope: -0.36747986
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.06983656
+    - serializedVersion: 3
+      time: 1
+      value: 0.10348129
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114767280051416030
 MonoBehaviour:
   m_ObjectHideFlags: 1

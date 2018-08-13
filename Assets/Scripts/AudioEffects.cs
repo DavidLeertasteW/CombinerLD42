@@ -13,6 +13,9 @@ public class AudioEffects : MonoBehaviour {
     [SerializeField]
     AudioClip[] walkingEffects, destructionEffects;
 
+    [SerializeField]
+    AnimationCurve volume;
+
 	// Use this for initialization
 	void Awake () {
         
@@ -60,10 +63,12 @@ public class AudioEffects : MonoBehaviour {
         if (type == "walking")
         {
             tempSource.clip = walkingEffects[index];
+            tempSource.volume = volume.Evaluate(1 / (index+1));
         }
         if (type == "destruction")
         {
             tempSource.clip = destructionEffects[index];
+            tempSource.volume = volume.Evaluate(1 / (index + 1));
         }
     }
 }
