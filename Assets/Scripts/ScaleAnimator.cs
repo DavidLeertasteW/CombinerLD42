@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScaleAnimator : MonoBehaviour {
 
-    RectTransform rectTransform;
+    Transform rectTransform;
     [SerializeField]
     bool activeAtStart = false;
     [SerializeField]
@@ -18,7 +18,7 @@ public class ScaleAnimator : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        rectTransform = gameObject.GetComponent<RectTransform>();
+        rectTransform = gameObject.GetComponent<Transform>();
         rectTransform.localScale = Vector3.zero;
         if (!activeAtStart)
         {

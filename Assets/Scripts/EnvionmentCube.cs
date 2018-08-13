@@ -46,6 +46,17 @@ public class EnvionmentCube : MonoBehaviour {
        
 
         //rateOverTime = perc*20;
+        if (timeSinceStart >= lifetime + spawnsAfter + 0.5f)
+        {
+            Destroy(gameObject);
+
+        }
+        if (timeSinceStart >= lifetime + spawnsAfter)
+        {
+            gameObject.GetComponent<ScaleAnimator>().enabled = true;
+            collider.enabled = false;
+            return;
+        }
 
 
         if (timeSinceStart >= spawnsAfter)
@@ -54,11 +65,9 @@ public class EnvionmentCube : MonoBehaviour {
             collider.enabled = true;
 
         }
+       
 
-        if (timeSinceStart >= lifetime + spawnsAfter){
-            Destroy(gameObject);
 
-        }
 		
 	}
 }
