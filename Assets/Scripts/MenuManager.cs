@@ -27,11 +27,11 @@ public class MenuManager : MonoBehaviour {
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
             //hier kommt dann unsere ld jam seite rein zum bewerten
-            Application.OpenURL("https://google.com/");
+            Application.OpenURL("https://ldjam.com/events/ludum-dare/42/$113741");
         }
         else
         {
-            Application.OpenURL("https://google.com/");
+            Application.OpenURL("https://ldjam.com/events/ludum-dare/42/$113741");
             Application.Quit();
         }
 

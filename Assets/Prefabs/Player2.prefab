@@ -112,7 +112,7 @@ MonoBehaviour:
   backward: 274
   left: 276
   right: 275
-  shift: 303
+  shift: 32
   alt: 307
   pawns: 0
   winText: Player 2 wins!

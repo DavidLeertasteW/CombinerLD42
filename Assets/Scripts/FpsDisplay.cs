@@ -34,7 +34,7 @@ public class FpsDisplay : MonoBehaviour {
 
             if ((fps < 25) && (QualitySettings.GetQualityLevel() != 0)){
                 QualitySettings.SetQualityLevel(0);
-            }else if((fps >40) && (QualitySettings.GetQualityLevel() != 1)) {
+            }else if((fps >50) && (QualitySettings.GetQualityLevel() != 1)) {
 
                 QualitySettings.SetQualityLevel(1);
             }

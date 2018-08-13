@@ -455,7 +455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: While moving to split a cube of your color.
+  m_Text: while moving to split a cube of your color.
 --- !u!222 &111219507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3107,7 +3107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: While moving to control a cube of your color.
+  m_Text: while moving to control a cube of your color.
 --- !u!222 &785692270
 CanvasRenderer:
   m_ObjectHideFlags: 0
