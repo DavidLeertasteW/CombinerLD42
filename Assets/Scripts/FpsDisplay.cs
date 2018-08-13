@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class FpsDisplay : MonoBehaviour {
 
     Text uiText;
-    int counter = 0, steps = 5;
+    int counter = 0, steps = 10;
     float currentMeassure = 0;
 
 	// Use this for initialization
@@ -21,6 +21,8 @@ public class FpsDisplay : MonoBehaviour {
         counter++;
         currentMeassure += Time.unscaledDeltaTime;
 
+
+
         if (counter >= steps)
         {
             
@@ -29,6 +31,13 @@ public class FpsDisplay : MonoBehaviour {
             uiText.text = fps.ToString();
             counter = 0;
             currentMeassure = 0;
+
+            if ((fps < 25) && (QualitySettings.GetQualityLevel() != 0)){
+                QualitySettings.SetQualityLevel(0);
+            }else if((fps >40) && (QualitySettings.GetQualityLevel() != 1)) {
+
+                QualitySettings.SetQualityLevel(1);
+            }
 
 
 

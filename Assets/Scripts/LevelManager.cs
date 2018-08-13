@@ -70,6 +70,7 @@ public class LevelManager : MonoBehaviour {
             {
                 Time.timeScale = 0.0f;
                 mainUIObject.SetActive(true);
+                next.gameObject.SetActive(false);
                 winText.text = singlePlayerGameOverText; 
             }else 
             {
