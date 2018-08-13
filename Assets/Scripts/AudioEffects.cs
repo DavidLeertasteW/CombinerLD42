@@ -47,6 +47,9 @@ public class AudioEffects : MonoBehaviour {
             case 64:
                 CreateAudioPlayer(7, type);
                 break;
+            case 128:
+                CreateAudioPlayer(8, type);
+                break;
 
 
         }
