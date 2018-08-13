@@ -302,6 +302,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration: 0.3
+  forward: 1
 --- !u!114 &105457938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,8 +531,8 @@ MonoBehaviour:
   startSingleplayer: {fileID: 1950867949}
   startMultiplayer: {fileID: 1036848372}
   tutorial: {fileID: 1013613446}
-  firstSinglePlayerStage: Tutorial
-  firstMultiPlayerStage: Map1
+  firstSinglePlayerStage: SinglePlayer1
+  firstMultiPlayerStage: MultiPlayer1
   tutorialName: Tutorial
 --- !u!81 &883892293
 AudioListener:

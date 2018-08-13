@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Idea01.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Idea02.unity
-    guid: 2d4b0fd82bfd74fd59bc9ad563a5be31
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: ff7faa6f873584c10b80dc324b4d0078
@@ -18,21 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/Tutorial.unity
     guid: 9dd93acfc9e29438d8d30f0adf6c035c
   - enabled: 1
-    path: Assets/Scenes/Maps/Map1.unity
-    guid: aa1ee6f80aedc43cbbbc9ef264734d81
+    path: Assets/Scenes/Maps/Map6.unity
+    guid: ba5b99d4cbda149569155eb3502f7c41
   - enabled: 1
-    path: Assets/Scenes/Maps/Map2.unity
-    guid: 652a4b55ba29d4c7d87d41a1009ddb54
-  - enabled: 1
-    path: Assets/Scenes/Maps/Map3.unity
-    guid: 9e13de4bec5844c12b9010ee1d6a0572
-  - enabled: 1
-    path: Assets/Scenes/Maps/Map4.unity
+    path: Assets/Scenes/Maps/MultiPlayer2.unity
     guid: 7184a6731a5684678bba84b7f7b471da
   - enabled: 1
-    path: Assets/Scenes/Maps/RogueLikeLevel1.unity
-    guid: c6f126412c352466699e7f9b9aad15b6
+    path: Assets/Scenes/Maps/MultiPlayer3.unity
+    guid: aa1ee6f80aedc43cbbbc9ef264734d81
   - enabled: 1
-    path: Assets/Scenes/Maps/Clear All!.unity
+    path: Assets/Scenes/Maps/MultiPlayer4.unity
+    guid: b854884d9a4d345d0a6d37066dc1ccbf
+  - enabled: 1
+    path: Assets/Scenes/Maps/MultiPlayer5.unity
+    guid: 9e13de4bec5844c12b9010ee1d6a0572
+  - enabled: 1
+    path: Assets/Scenes/Maps/SinglePlayer1.unity
     guid: b9bbea36cd1a94d8783a2e4064637def
+  - enabled: 1
+    path: Assets/Scenes/Maps/SinglePlayer2.unity
+    guid: 3b2806a362b3b4affb4647a2ccae9278
   m_configObjects: {}
