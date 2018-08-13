@@ -16,10 +16,11 @@ public class EnvionmentCube : MonoBehaviour {
     MeshRenderer meshRenderer;
 
     ParticleSystem particle;
+    GameObject child;
 
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
         collider = gameObject.GetComponent<BoxCollider>();
@@ -30,6 +31,13 @@ public class EnvionmentCube : MonoBehaviour {
         {
             meshRenderer.enabled = false;
             collider.enabled = false;
+            if (transform.childCount > 0)
+            {
+                child = transform.GetChild(0).gameObject;
+
+                child.SetActive(false);
+
+            }
         }
 
         mat = meshRenderer.material;
@@ -54,6 +62,7 @@ public class EnvionmentCube : MonoBehaviour {
         if (timeSinceStart >= lifetime + spawnsAfter)
         {
             gameObject.GetComponent<ScaleAnimator>().enabled = true;
+            gameObject.GetComponent<ScaleAnimator>().forward = true;
             collider.enabled = false;
             return;
         }
@@ -61,8 +70,17 @@ public class EnvionmentCube : MonoBehaviour {
 
         if (timeSinceStart >= spawnsAfter)
         {
+            gameObject.GetComponent<ScaleAnimator>().enabled = true;
+            gameObject.GetComponent<ScaleAnimator>().forward = false;
             meshRenderer.enabled = true;
             collider.enabled = true;
+            if (child != null)
+            {
+                if (transform.localScale.x > 0.5f)
+                {
+                    child.SetActive(true);
+                }
+            }
 
         }
        

@@ -13,6 +13,7 @@ public class ScaleAnimator : MonoBehaviour {
     [SerializeField]
     float duration = 1;
     float currenttime = 0;
+    public bool forward = true;
 
 
     // Use this for initialization
@@ -31,8 +32,16 @@ public class ScaleAnimator : MonoBehaviour {
         if(rectTransform != null)
         {
             currenttime += Time.unscaledDeltaTime;
-            float perc = Mathf.Clamp01(currenttime / duration);
-            rectTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, animationCurve.Evaluate(perc));
+            if (forward)
+            {
+                float perc = Mathf.Clamp01(currenttime / duration);
+                rectTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, animationCurve.Evaluate(perc));
+            }else
+            {
+                float perc = 1-Mathf.Clamp01(currenttime / duration);  
+                rectTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, animationCurve.Evaluate(perc));
+            }
+
         }
 		
 	}
