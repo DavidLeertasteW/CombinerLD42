@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/Tutorial.unity
     guid: 9dd93acfc9e29438d8d30f0adf6c035c
   - enabled: 1
-    path: Assets/Scenes/Maps/Map6.unity
+    path: Assets/Scenes/Maps/MultiPlayer1.unity
     guid: ba5b99d4cbda149569155eb3502f7c41
   - enabled: 1
     path: Assets/Scenes/Maps/MultiPlayer2.unity
@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: b854884d9a4d345d0a6d37066dc1ccbf
   - enabled: 1
     path: Assets/Scenes/Maps/MultiPlayer5.unity
-    guid: 9e13de4bec5844c12b9010ee1d6a0572
+    guid: 992d41aa753874657987a49385842249
   - enabled: 1
     path: Assets/Scenes/Maps/SinglePlayer1.unity
     guid: b9bbea36cd1a94d8783a2e4064637def
