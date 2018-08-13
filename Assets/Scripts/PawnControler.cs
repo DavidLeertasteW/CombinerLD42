@@ -22,6 +22,8 @@ public class PawnControler : MonoBehaviour
     public int strentgh;
     public int playerNumber;
 
+    GameObject tempSplitObject;
+
 
 
     TextMesh textM;
@@ -95,25 +97,46 @@ public class PawnControler : MonoBehaviour
                     {
                         Duplicate();
                         Raycast(Vector3.forward);
+                        if(tempSplitObject.transform.position == transform.position){
+                            Destroy(tempSplitObject);
+                            strentgh *= 2;
+                            textM.text = strentgh.ToString();
+                        }
 
                     }
                     if (Input.GetKeyDown(curserControls.backward))
                     {
                         Duplicate();
                         Raycast(Vector3.back);
+                        if (tempSplitObject.transform.position == transform.position)
+                        {
+                            Destroy(tempSplitObject);
+                            strentgh *= 2;
+                            textM.text = strentgh.ToString();
+                        }
 
                     }
                     if (Input.GetKeyDown(curserControls.left))
                     {
                         Duplicate();
                         Raycast(Vector3.left);
-
+                        if (tempSplitObject.transform.position == transform.position)
+                        {
+                            Destroy(tempSplitObject);
+                            strentgh *= 2;
+                            textM.text = strentgh.ToString();
+                        }
                     }
                     if (Input.GetKeyDown(curserControls.right))
                     {
                         Duplicate();
                         Raycast(Vector3.right);
-
+                        if (tempSplitObject.transform.position == transform.position)
+                        {
+                            Destroy(tempSplitObject);
+                            strentgh *= 2;
+                            textM.text = strentgh.ToString();
+                        }
                     }
                 }
 
@@ -267,7 +290,7 @@ public class PawnControler : MonoBehaviour
             //Vector3 tempPos = master.transform.position;
             strentgh = strentgh / 2;
             textM.text = strentgh.ToString();
-            GameObject.Instantiate(gameObject);
+            tempSplitObject = GameObject.Instantiate(gameObject);
         }
 
     void StartScreenShake (int strength) {
