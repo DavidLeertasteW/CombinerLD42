@@ -59,16 +59,21 @@ public class AudioEffects : MonoBehaviour {
     }
     void CreateAudioPlayer(int index, string type="walking"){
         
-        AudioSource tempSource = GameObject.Instantiate(audioPlayingObject).GetComponent<AudioSource>();
+        if (type == "destruction")
+        {
+            AudioSource tempSource = GameObject.Instantiate(audioPlayingObject).GetComponent<AudioSource>();
+            tempSource.clip = destructionEffects[index];
+            tempSource.volume = volume.Evaluate(1 / (index + 1)) * 0.25f;
+            type = "walking";
+        }
+        
+
         if (type == "walking")
         {
+            AudioSource tempSource = GameObject.Instantiate(audioPlayingObject).GetComponent<AudioSource>();
             tempSource.clip = walkingEffects[index];
             tempSource.volume = volume.Evaluate(1 / (index+1));
         }
-        if (type == "destruction")
-        {
-            tempSource.clip = destructionEffects[index];
-            tempSource.volume = volume.Evaluate(1 / (index + 1));
-        }
+       
     }
 }

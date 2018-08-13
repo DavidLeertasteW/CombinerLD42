@@ -287,7 +287,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -812,15 +812,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3425873ae529c421eb0b5921ffb7cc9d, type: 3}
   - {fileID: 8300000, guid: 7a8a96b657df146c3a580a7430972f77, type: 3}
   destructionEffects:
-  - {fileID: 8300000, guid: fc5dc49457dc146e3a0a7868c0f2e44d, type: 3}
-  - {fileID: 8300000, guid: c30258786b7b54ae3ba6e47464672bec, type: 3}
-  - {fileID: 8300000, guid: 83002dc312a1f4d0896ada4af1d4be17, type: 3}
-  - {fileID: 8300000, guid: 0ba1f93cf1ded48c1865756559e75732, type: 3}
-  - {fileID: 8300000, guid: 417586eddd41a40cdbcb23852bf7c78d, type: 3}
-  - {fileID: 8300000, guid: 39fe70926e8f44c078471aff0ba80c82, type: 3}
-  - {fileID: 8300000, guid: b325b7c9f0f6c4a1188b64429dce6c79, type: 3}
-  - {fileID: 8300000, guid: 3425873ae529c421eb0b5921ffb7cc9d, type: 3}
-  - {fileID: 8300000, guid: 7a8a96b657df146c3a580a7430972f77, type: 3}
+  - {fileID: 8300000, guid: 7b4f13fd6823d4a96aceb151528ba2d6, type: 3}
+  - {fileID: 8300000, guid: 7b4f13fd6823d4a96aceb151528ba2d6, type: 3}
+  - {fileID: 8300000, guid: f23cef68c68414d9d8ea38062abff8c0, type: 3}
+  - {fileID: 8300000, guid: e139cb3e498a445beb44406a94f74eca, type: 3}
+  - {fileID: 8300000, guid: 2a333d67f188e46a79bd866d1ee9171c, type: 3}
+  - {fileID: 8300000, guid: b90203c21ea25480abff29fcbfcbbe41, type: 3}
+  - {fileID: 8300000, guid: 444872d0a46aa4f95aa06f6d70030ad1, type: 3}
+  - {fileID: 8300000, guid: 713e10a5cf5b24224a7191aa5341cee8, type: 3}
+  - {fileID: 8300000, guid: ceb26d25b15cf43e5b661dbfe7849f21, type: 3}
   volume:
     serializedVersion: 2
     m_Curve:
