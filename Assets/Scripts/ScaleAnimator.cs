@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ScaleAnimator : MonoBehaviour {
 
     RectTransform rectTransform;
-
+    [SerializeField]
+    bool activeAtStart = false;
     [SerializeField]
     AnimationCurve animationCurve;
     [SerializeField]
@@ -14,12 +15,15 @@ public class ScaleAnimator : MonoBehaviour {
     float currenttime = 0;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         rectTransform = gameObject.GetComponent<RectTransform>();
         rectTransform.localScale = Vector3.zero;
-        gameObject.SetActive(false);
-
+        if (!activeAtStart)
+        {
+            gameObject.SetActive(false);
+        }
 	}
 	
 	// Update is called once per frame

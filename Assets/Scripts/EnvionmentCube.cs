@@ -24,17 +24,7 @@ public class EnvionmentCube : MonoBehaviour {
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
         collider = gameObject.GetComponent<BoxCollider>();
 
-       /* particle = transform.GetChild(0).gameObject.GetComponent<ParticleSystem>();
-
-        if (particle != null)
-        {
-            particle.Stop();
-            var duration = particle.main;
-            duration.duration = lifetime;
-            particle.Play();
-
-        }
-*/
+      
 
         if (spawnsAfter > 0)
         {

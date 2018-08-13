@@ -214,6 +214,7 @@ public class PawnControler : MonoBehaviour
             {
                 master.transform.position = transform.position;
                 StartScreenShake(this.strentgh / 2);
+                PlaySoundEffect(strentgh, "walking");
             }
 
         }
@@ -254,6 +255,7 @@ public class PawnControler : MonoBehaviour
         if (amount < 0)
         {
             StartScreenShake(target.strentgh);
+            PlaySoundEffect(strentgh, "destruction");
             Destroy(target.gameObject);
         }
 
@@ -276,6 +278,13 @@ public class PawnControler : MonoBehaviour
 
 
         screenShake.StartCoroutine("ShakeThat");
+    }
+    void PlaySoundEffect(int strength, string type){
+        AudioEffects audioEffects = Camera.main.gameObject.GetComponent<AudioEffects>();
+        if (audioEffects != null)
+        {
+            audioEffects.PlaySoundEffect(strength, type);
+        }
     }
 
 
