@@ -62,7 +62,7 @@ public class PawnControler : MonoBehaviour
         //if not, it is reacting to player input
         if (master.transform.position == transform.position)  
         {
-            if (Input.GetKey(curserControls.shift))
+            if (Input.GetKey(curserControls.shift) && !(Input.GetKey(curserControls.alt)))
             {
                 if (Input.GetKeyDown(curserControls.forward))
                 {
@@ -85,7 +85,7 @@ public class PawnControler : MonoBehaviour
 
                 }
             }
-            else if ((Input.GetKey(curserControls.alt)))
+            if ((Input.GetKey(curserControls.alt))&& !(Input.GetKey(curserControls.shift)))
             {
                 if (strentgh > 1)
                 {
