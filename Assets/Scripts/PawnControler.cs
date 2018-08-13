@@ -141,6 +141,8 @@ public class PawnControler : MonoBehaviour
         {
             GameObject targetObject = ray.collider.gameObject;
 
+
+
             PawnControler targetPawn = targetObject.GetComponent<PawnControler>();
             if (targetPawn == null){
                 return;
