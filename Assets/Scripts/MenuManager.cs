@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour {
         startMultiplayer.onClick.AddListener(StartMultiPlayer);
         tutorial.onClick.AddListener(OpenTutorial);
 
-        Application.targetFrameRate = 120;
+        //Application.targetFrameRate = 120;
 	}
 	
     void OnQuit () 
