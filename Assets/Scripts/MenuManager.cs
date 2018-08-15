@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
+
 public class MenuManager : MonoBehaviour {
 
     [SerializeField]
@@ -20,6 +21,8 @@ public class MenuManager : MonoBehaviour {
         startSingleplayer.onClick.AddListener(StartSinglePlayer);
         startMultiplayer.onClick.AddListener(StartMultiPlayer);
         tutorial.onClick.AddListener(OpenTutorial);
+
+        Application.targetFrameRate = 120;
 	}
 	
     void OnQuit () 
