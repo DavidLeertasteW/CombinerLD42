@@ -3618,6 +3618,11 @@ Prefab:
       propertyPath: winText
       value: Player Red wins!
       objectReference: {fileID: 0}
+    - target: {fileID: 137913323288379170, guid: c3c02317f5b2b4a02b1d1d05ab820c41,
+        type: 2}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: -47.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c02317f5b2b4a02b1d1d05ab820c41, type: 2}
   m_IsPrefabAsset: 0
