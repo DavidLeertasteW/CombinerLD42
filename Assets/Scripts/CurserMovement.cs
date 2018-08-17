@@ -75,16 +75,16 @@ public class CurserMovement : MonoBehaviour
                 }
 
             }
-            //BlendshapeUpdate(1, 0);
-            //BlendshapeUpdate(2, 0);
+            BlendshapeUpdate(1, 0);
+            BlendshapeUpdate(2, 0);
 
 
 
             }
 
 
-       // Vector2 temp = CheckLowerCube();
-        //BlendshapeUpdate((int)temp.x, temp.y);
+        Vector2 temp = CheckLowerCube();
+        BlendshapeUpdate((int)temp.x, temp.y);
 
        
     }
