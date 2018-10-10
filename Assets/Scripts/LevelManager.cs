@@ -42,6 +42,7 @@ public class LevelManager : MonoBehaviour {
         {
             masters.Add(g.GetComponent<CurserMovement>());
         }
+        mainUIObject.SetActive(false);
     }
 
     // Update is called once per frame
